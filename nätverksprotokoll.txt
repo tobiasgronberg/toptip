@@ -1,0 +1,14 @@
+Nätverksprotokoll
+
+TCP – transmission control protocoll
+IP – internet protocoll
+OSI model – open systems interconnection basic reference model
+UDP – User datagram protocol
+
+TCP och IP protokollen är protokoll som jobbar i mindre lager än vad ett OSI protokoll gör, men de lager som är aktiva innuti har i princip samma egenskaper och syften.
+Allt från routing till säkerhet och error controll.
+Den större skillnaden är att OSI modellen(vilket i sig bara är en yrkesbeskrivning av hur protokoll arbetar och hur man kan effektivisera och standardisera nätverk) har 7 istället för 4 lager som data måste gå igenom.
+Skillnaden mellan UDP och TCP är stora, TCP hanterar data på ett sätt helt annorlunda från hur UDP gör.
+Främst så är UDP ett mindre säkert sätt att routa data på, då den fokuserar mer på att kunna skicka iväg allting i real tid istället för TCPs fokus på reliability och sekvensering av den datan som hanteras.
+En annan skillnad mellan dessa två protokoll är att TCP är uppkoppklings orienterad medans UDP inte är connection-based överhuvudtaget.
+Så den offrar flera lager av det som TCP har för att kunna snabbt och effektivt transportera data, såsom till exempel error correction och återanslutnings metoder som TCP har då den skickar tillbaka data som har gått förlorad i routen protokollet skickar.
